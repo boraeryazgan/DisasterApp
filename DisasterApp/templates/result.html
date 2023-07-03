@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Natural Disaster Detection</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles1.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1 class="form-title">Natural Disaster Detection</h1>
+    <div class="form-container">
+      <p>Sentence: {{ sentence }}</p>
+      <p>Prediction: {{ prediction }}</p>
+      <p>Probability: {{ probability }}</p>
+        <a href="{{ url_for('about') }}" class="btn">About</a>
+        <a href="{{ url_for('analysis') }}" class="btn">Analysis</a>
+
+    </div>
+  </div>
+</body>
+</html>

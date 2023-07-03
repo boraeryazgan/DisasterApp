@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Natural Disaster Detection</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles1.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1 class="form-title">Natural Disaster Detection</h1>
+    <div class="form-container">
+      <form action="{{ url_for('predict') }}" method="POST">
+        <input type="text" id="sentence" name="sentence" placeholder="Enter a sentence...">
+        <input type="submit" value="Predict">
+      </form>
+        <a href="{{ url_for('about') }}" class="btn">About</a>
+        <a href="{{ url_for('analysis') }}" class="btn">Analysis</a>
+
+    </div>
+  </div>
+</body>
+</html>

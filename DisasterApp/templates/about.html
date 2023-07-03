@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About - Natural Disaster Detection</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1 class="about-title">About</h1>
+    <div class="about-content">
+      <p>
+        Hello, I'm Bora Eryazgan, a Computer Science Engineering student at Acıbadem University. As an AI enthusiast, I have developed a machine learning project focused on Natural Disaster Detection.
+      </p>
+      <p>
+        This project utilizes TensorFlow's deep learning model to predict whether a given sentence is related to a natural disaster or not. The model has been trained on a large dataset of disaster-related text data, allowing it to learn patterns and make accurate predictions.
+      </p>
+      <p>
+        The Natural Disaster Detection project combines the power of machine learning and web development. It leverages Flask, a Python web framework, to provide a user-friendly interface where users can enter a sentence and get real-time predictions.
+      </p>
+      <p>
+        I am passionate about exploring the potential of artificial intelligence and its applications in various domains. This project is a testament to my dedication to learning and implementing advanced technologies.
+      </p>
+    </div>
+    <a href="{{ url_for('index') }}" class="btn">Back to Home</a>
+      <a href="{{ url_for('analysis') }}" class="btn">Analysis</a>
+
+  </div>
+</body>
+</html>

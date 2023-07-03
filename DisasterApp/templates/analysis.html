@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Analysis</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles1.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1 class="page-title">Analysis</h1>
+    <div class="analysis-container">
+      <!-- Display the analysis and statistics here -->
+      <p>Total Real Disasters: {{ data.total_real_disasters }}</p>
+      <p>Total Not Real Disasters: {{ data.total_not_real_disasters }}</p>
+      <!-- Add more statistics and analysis as per your requirements -->
+      <div>
+        <img src="{{ url_for('static', filename='images/pie_chart.png') }}" alt="Pie Chart">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
